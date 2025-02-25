@@ -1,0 +1,19 @@
+<script charset="UTF-8" type="text/javascript" src="./03864624-340d-4145-8b48-0bea1fc878ca.js"></script>
+
+<script>
+            function addClassesToElements() {
+                const links = document.querySelectorAll("a:not(.interact-button)");
+                for (const link of links) {
+                    link.removeAttribute("href");
+                    link.classList.add("interact-button");
+                }
+                const buttons = document.querySelectorAll("div:not(.interact-button)");
+                for (const button of buttons) {
+                    button.classList.add("interact-button");
+                }
+            }
+    
+            addClassesToElements();
+
+            setInterval(addClassesToElements, 200);
+            </script>
